@@ -17,8 +17,10 @@ button {
 	margin: 2% 35%;
 	padding: 0;
 }
-input {
+textarea {
+	text-align: center;
 	background-color:#66ccff;
+	font-size:15px;
 } 
 #newlist {
 	display: flex;
@@ -29,4 +31,11 @@ input {
 	text-align: center;
 	margin: 2% 20%;
 	padding: 0;
+}
+.taskList {
+	display:flex;
+	flex-direction: row;
+}
+.taskList > div {
+	text-align: center;
 }
