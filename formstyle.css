@@ -1,6 +1,39 @@
-﻿button {
+﻿.taskList > button {
+	font-size:100%;
+	text-align: center;
+	width: 3em;
+	height: 3em;
+	outline:none;
+}
+.doneBtn {
+	border-radius: 1.5em;
+	background-color: green;
+	border-style:solid;
+	border-color: white;
+	transition: border-style 1s;
+}
+.doneBtn:hover {
+	border-style: dotted;
+}
+.unDoneBtn {
+	border-radius: 1.5em;
 	background-color: orange;
-
+	border-style:solid;
+	border-color:white;
+}
+.unDoneBtn:hover {
+	border-style:dotted;
+	transition: border-style 1s;
+}
+.delBtn {
+	border-radius: 1.5em;
+	background-color: red;
+	border-style:solid;
+	border-color:white;
+	transition: border-style 1s;
+}
+.delBtn:hover {
+	border-style: dotted;
 }
 .centered{
 	display: flex;
@@ -10,8 +43,12 @@
 #addTask {
 	display:block;
 	width: 30%;
+	height: 3em;
 	margin: 2% 35%;
 	padding: 0;
+	border-radius: 1.5em;
+	outline: none;
+	font-size:100%
 }
 #newlist {
 	display: flex;
@@ -25,22 +62,28 @@
 	flex-direction: row;
 	width:60%;
 }
-.taskList > button {
-	text-align: center;
-	width:10%;
-	height: 3em;
-}
-.taskList > textarea {
+textarea {
 	background-color:#66ccff;
 	font-size:15px;
 	width:80%;
 	height: 5em;
+	border-radius: 1em;
+	border-color: white;
+	border-width: 3px;
+	margin: 0 10px;
+	box-shadow: 0 0 0 1px black;
+	outline:none;
+}
+textarea:focus {
+	box-shadow: 0 0 0 0 black;
 }
 .taskList > p {
-	text-align:justify;
 	margin-block-start: 0em;
     	margin-block-end: 0em;
 	background-color:#66ccff;
 	font-size:15px;
 	width:80%;
+	border-radius: 0.5em;
+	margin: 0 10px;
+	word-break: break-all;
 }
